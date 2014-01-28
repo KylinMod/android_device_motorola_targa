@@ -1,13 +1,13 @@
 # Inherit device configuration for Droid Bionic.
 $(call inherit-product, device/motorola/targa/full_targa.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common KM stuff.
+$(call inherit-product, vendor/kylin/config/common_full_phone.mk)
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cm_targa
+PRODUCT_NAME := km_targa
 PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := targa
 PRODUCT_DEVICE_PREFIX := cdma
@@ -28,4 +28,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
    PRODUCT_BRAND=${PRODUCT_BRAND} \
    BUILD_UTC_DATE= \
    PRODUCT_DEFAULT_LANGUAGE=en \
-   PRODUCT_DEFAULT_REGION=US \
+   PRODUCT_DEFAULT_REGION=US
